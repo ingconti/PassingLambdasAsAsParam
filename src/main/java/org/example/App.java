@@ -1,4 +1,4 @@
-package org.example;
+package com.ingconti;
 
 
 import java.util.Date;
@@ -15,7 +15,7 @@ public class App
     }
 
     static public void waitABitAndMakeSomeDirtyWorkOn(int i, Callback cb) {
-
+    // we pass to a timer.. can also be passed to another thread.. network completion and so on...
         TimerTask task = new TimerTask() {
             public void run() {
                 System.out.println("\nTask performed on: " + new Date()  );
